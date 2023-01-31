@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title></title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/style.css">
-
-
 </head>
 <body>
     <div class="wrapper">
@@ -207,40 +204,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <script src="./js/slick.min.js"></script>
+    <script src="./js/article.js"></script>
 
-    <script>
-        $( document ).ready(function() {
-            $(".burger-menu ").on("click",".bar",function(){
-                $(".black-header").slideToggle();
-                $(".bar").toggleClass('change');
-            });
-
-            $('.slider_ar_gallery').slick({
-                arrows: false,
-                fade: true,
-                asNavFor: ".slider_ar_gallery_small",
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            });
-
-            $('.slider_ar_gallery_small').slick({
-                asNavFor: ".slider_ar_gallery",
-                arrows: false,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                infinity: true,
-                centerMode: true,
-                focusOnSelect: true,
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 2,
-                        }
-                    }
-                ]
-            })
-        });
-    </script>
 </body>
 </html>
