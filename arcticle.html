@@ -20,8 +20,9 @@
             <div class="header-content">
                 <div class="flex-header">
                     <div></div>
-                    <a href="#" class="">
+                    <a href="#" class="header-logo-block">
                         <img src="./img/logo.webp" class="header-logo" alt="">
+                        <img src="./img/logo-white.webp" class="header-logo" alt="">
                     </a>
                     <div class="header-date-block">
                         <div class="date">Maandag - 30 Jan 2023</div>
@@ -57,7 +58,40 @@
                 <div class="flex-article">
                     <div class="left-article">
                         <div class="article-gallery">
-                            <img src="./img/article-big.webp" class="gallery-main" alt="">
+                            <div class="slider_ar_gallery">
+                                <div class="slider_item">
+                                    <img src="./img/article-big.webp" class="gallery-main" alt="">
+                                </div>
+                                <div class="slider_item">
+                                    <img src="./img/article-big.webp" class="gallery-main" alt="">
+                                </div>
+                                <div class="slider_item">
+                                    <img src="./img/article-big.webp" class="gallery-main" alt="">
+                                </div>
+                                <div class="slider_item">
+                                    <img src="./img/article-big.webp" class="gallery-main" alt="">
+                                </div> 
+                            </div>
+                            <div class="slider_ar_gallery_small">
+                                <div class="slider_item">
+                                    <img src="./img/article-big.webp" class="gallery-main" alt="">
+                                </div>
+                                <div class="slider_item">
+                                    <img src="./img/article-big.webp" class="gallery-main" alt="">
+                                </div>
+                                <div class="slider_item">
+                                    <img src="./img/article-big.webp" class="gallery-main" alt="">
+                                </div>
+                                <div class="slider_item">
+                                    <img src="./img/article-big.webp" class="gallery-main" alt="">
+                                </div>
+                                <div class="slider_item">
+                                    <img src="./img/article-big.webp" class="gallery-main" alt="">
+                                </div>
+                                <div class="slider_item">
+                                    <img src="./img/article-big.webp" class="gallery-main" alt="">
+                                </div>
+                            </div>
                         </div>
                         <div class="article-news">
                             <p>BRAFA opent vandaag van 29 januari tot 5 februari 2023, zijn deuren in Brussels Expo. Het decor zal worden gevuld in de stijl van Art Nouveau, het thema gekozen voor deze 68ste editie, in een enscenering door Volume Architecture, dat dit jaar 20 jaar samenwerking met BRAFA viert. De beurs staat bekend om het scala aan specialiteiten dat het presenteert aan verzamelaars en kunstliefhebbers uit heel Europa en daarbuiten. Ook dit jaar belooft het meer dan 10.000 kunstwerken uit de oudheid tot heden. Dertien nieuwe galerieën voegen zich bij de vaste exposanten op de beurs.</p>
@@ -172,12 +206,40 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
+    <script src="./js/slick.min.js"></script>
+
     <script>
         $( document ).ready(function() {
             $(".burger-menu ").on("click",".bar",function(){
                 $(".black-header").slideToggle();
                 $(".bar").toggleClass('change');
             });
+
+            $('.slider_ar_gallery').slick({
+                arrows: false,
+                fade: true,
+                asNavFor: ".slider_ar_gallery_small",
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+
+            $('.slider_ar_gallery_small').slick({
+                asNavFor: ".slider_ar_gallery",
+                arrows: false,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinity: true,
+                centerMode: true,
+                focusOnSelect: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    }
+                ]
+            })
         });
     </script>
 </body>

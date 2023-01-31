@@ -30,10 +30,28 @@
     margin-top: 2px;
     transition: 0.3s;
     display: block;
+    position: relative;
 }
 
 .footer-link a:nth-child(1) {
     margin-top: 0px;
+}
+
+.footer-link a::after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    background: #fff;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.footer-link a:hover::after {
+    width: 100%;
+    transition: 0.3s;
 }
 
 .footer-link a:hover {
@@ -108,8 +126,10 @@
     }
 
     .footer-link a {
-        font-size: 20px;
+        font-size: 16px;
+        line-height: 30px;
     }
+    
 
     .white-footer-flex {
         flex-direction: column;
