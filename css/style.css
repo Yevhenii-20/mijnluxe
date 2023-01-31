@@ -658,13 +658,13 @@ a {
     margin-top: 15px;
 }
 
-.more-news h5 {
+.more-news div {
     border-bottom: 1px solid #EFEFEF;
     padding-bottom: 12px;
     padding-top: 12px;
 }
 
-.more-news h5 a {
+.more-news div a {
     font-family: 'Cabrito-Bold', sans-serif;
     font-size: 16px;
     line-height: 26px;
@@ -674,7 +674,7 @@ a {
 
 }
 
-.more-news h5 a:hover {
+.more-news div a:hover {
     text-decoration: underline;
 }
 
