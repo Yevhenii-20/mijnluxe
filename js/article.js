@@ -7,12 +7,12 @@ $( document ).ready(function() {
     $('.slider_ar_gallery').slick({
         arrows: false,
         fade: true,
-        asNavFor: ".slider_ar_gallery_small",
+        //asNavFor: ".slider_ar_gallery_small",
         slidesToShow: 1,
         slidesToScroll: 1,
     });
 
-    $('.slider_ar_gallery_small').slick({
+    /*$('.slider_ar_gallery_small').slick({
         asNavFor: ".slider_ar_gallery",
         arrows: false,
         slidesToShow: 4,
@@ -28,5 +28,5 @@ $( document ).ready(function() {
                 }
             }
         ]
-    })
+    })*/
 });
