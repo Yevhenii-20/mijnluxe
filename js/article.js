@@ -5,7 +5,7 @@ $( document ).ready(function() {
     });
 
     $('.slider_ar_gallery').slick({
-        arrows: false,
+        arrows: true,
         fade: true,
         //asNavFor: ".slider_ar_gallery_small",
         slidesToShow: 1,
