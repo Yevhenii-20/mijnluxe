@@ -52,6 +52,7 @@ a {
 
 .header-logo {
     width: 130px;
+    height: auto;
 }
 
 .flex-header {
@@ -363,6 +364,7 @@ a {
 
 .footer-logo {
     width: 130px;
+    height: auto;
 }
 
 .footer-text {
