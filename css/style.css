@@ -425,6 +425,7 @@ template {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 :root {
@@ -1318,6 +1319,110 @@ input {
 .company-logo img {
     width: 280px;
 }
+
+.flex-webshop_section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.luxury-rent_container {
+    width: 30%;
+}
+
+.rent_block {
+    display: flex;
+    border: 1px solid #EEEEEE;
+    padding: 15px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.rent_block:hover {
+    background: #EEEEEE;
+    transition: 0.3s;
+}
+
+.luxury-rent_container .rent_block:nth-child(1) {
+    border-bottom: none;
+}
+
+.rent_block img {
+    width: 110px;
+    height: 73px;
+}
+
+.rent-name {
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 500;
+    color: #000;
+    padding-bottom: 2px;
+}
+
+.rent-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #777777;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.rent-info {
+    padding-left: 10px;
+}
+
+.webshop-container {
+    width: 67%;
+}
+
+.product {
+    display: block;
+    width: 32%;
+    margin-bottom: 15px;
+}
+
+.webshop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product > img {
+    width: 100%
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+}
+
+.product-price img {
+    width: 15px;
+}
+
+.product-price span {
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    color: #899399;
+    padding-left: 5px;
+}
+
+.product-name {
+    font-size: 18px;
+    line-height: 1.45;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
 /*-- END HOMEPAGE --*/
 
 
@@ -1332,6 +1437,11 @@ input {
         max-width: 100%;
         width: 100%;
         height: auto;
+    }
+
+    .company-logo img {
+        max-width: 100%;
+        width: 25%;
     }
 }
 
@@ -1388,6 +1498,35 @@ input {
         margin-right: 0px;
         padding-top: 15px;
         padding-bottom: 10px;
+    }
+    
+    .new-article_flex, .hotspot-flex, .flex-webshop_section {
+        flex-direction: column;
+    }
+
+    .flex-choise {
+        flex-wrap: wrap;
+    }
+
+    .choise-block {
+        width: 48%;
+    }
+
+    .flex-choise .choise-block:nth-child(1), .flex-choise .choise-block:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
+    .big-new-article, .small-new-articles_block, .hotspot_block, .technology-right, 
+    .webshop-container, .luxury-rent_container {
+        width: 100%;
+    }
+
+    .small-new-article {
+        margin-top: 20px;
+    }
+
+    .technology-right, .webshop-container {
+        margin-top: 30px;
     }
     
 }
@@ -1450,6 +1589,35 @@ input {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    .subscribe-block, .hotspot_block {
+        flex-direction: column;
+    }
+
+    .subscribe-block > div:nth-child(1), .subscribe-block > div:nth-child(2), 
+    .subscribe-send_btn, .hotspot_block > div:nth-child(2), .hotspot_block > a:nth-child(1) {
+        width: 100%;
+    }
+
+    .subscribe-flex {
+        margin-top: 15px;
+    }
+
+    .subscribe-flex > div:nth-child(2) {
+        width: 30%;
+    }
+
+    .small-hotspot {
+        margin-top: 20px;
+    }
+
+    .small-hotspot_name {
+        font-size: 20px;
+    }
+
+    .small-hotspot_date, .product-name {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1475,6 +1643,67 @@ input {
     .slider_ar_gallery .slick-arrow.slick-next {
         right: 5px;
     }
+
+    .small-new-article {
+        width: 100%;
+    }
+
+    .small-hotspot_block {
+        flex-direction: column;
+        border: 1px solid #EEEEEE;
+        padding: 10px;
+    }
+
+    .small-hotspot_block > div:nth-child(2) {
+        padding-top: 5px;
+        padding-left: 0px;
+    }
+
+    .subscribe-flex {
+        flex-direction: column;
+    }
+
+    .subscribe-flex > div:nth-child(1), .subscribe-flex > div:nth-child(2) {
+        width: 100%;
+    }
+
+    .subscribe-flex > div:nth-child(2) {
+        margin-top: 7px;
+    }
+
+    .choise-block {
+        width: 100%;
+    }
+
+    .product {
+        width: 48%;
+    }
+
+    .small-hotspot_date, .product-name {
+        font-size: 14px;
+    }
+
+    .company-logo img {
+        width: 33%;
+    }
+
+    .big-new-article_info {
+        padding: 25px;
+        padding-top: 35px;
+    }
+
+    .big-new-article_name, .subscribe-title {
+        font-size: 24px;
+    }
+
+    .big-new-article_text, .technology-right_text {
+        margin-top: 10px;
+    }
+
+    .subscribe-text {
+        line-height: 1.2;
+    }
+
 }
 
 
