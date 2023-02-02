@@ -426,6 +426,7 @@ template {
 a {
     text-decoration: none;
     color: #000;
+    display: block;
 }
 
 :root {
@@ -875,6 +876,10 @@ input {
     padding-left: 20px;
 }
 
+.white-footer-link {
+    display: flex;
+}
+
 .copyright {
     font-weight: 400;
     line-height: 26px;
@@ -947,11 +952,6 @@ input {
     transition: 0.3s;
 }
 
-.article-name_link {
-    color: #000; 
-    display: block;
-}
-
 .big-new-article_name {
     font-size: 32px;
     font-weight: 700;
@@ -969,7 +969,7 @@ input {
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 15px;
-    color: #777777;
+    color: #000;
     margin-top: 20px;
 
     width: 100%;
@@ -979,7 +979,7 @@ input {
 
 
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
 
@@ -1045,7 +1045,7 @@ input {
 .hotspot-flex {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .technology-right_info {
@@ -1068,7 +1068,6 @@ input {
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 15px;
-    color: #777777;
 
     margin-top: 20px;
     width: 100%;
@@ -1085,8 +1084,13 @@ input {
 .hotspot_block {
     width: 68%;
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: space-between;
+}
+
+.small-hotspot {
+    min-height: 100%;
+
 }
 
 .technology-right {
@@ -1109,7 +1113,6 @@ input {
     font-weight: 400;
     line-height: 26px;
     margin-top: 15px;
-    color: #777777;
 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1137,7 +1140,6 @@ input {
 
 .small-hotspot_date {
     font-size: 14px;
-    color: #8B8B8B;
     font-weight: 400;
 }
 
@@ -1241,7 +1243,6 @@ input {
 
 .date-choise_block {
     font-size: 15px;
-    color: #777777;
     padding-left: 15px;
 }
 
@@ -1296,7 +1297,6 @@ input {
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
-    color: #777777;
     overflow: hidden;
     text-overflow: ellipsis;
 
@@ -1364,7 +1364,6 @@ input {
     font-size: 15px;
     font-weight: 400;
     line-height: 23px;
-    color: #777777;
     overflow: hidden;
     text-overflow: ellipsis;
 
@@ -1412,7 +1411,6 @@ input {
     font-weight: 400;
     font-size: 15px;
     font-style: normal;
-    color: #899399;
     padding-left: 5px;
 }
 
@@ -1421,6 +1419,16 @@ input {
     line-height: 1.45;
     font-weight: 700;
     padding-top: 10px;
+}
+
+.virtical_line {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 1px;
+    background: #899399;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 /*-- END HOMEPAGE --*/
