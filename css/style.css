@@ -946,11 +946,11 @@ input {
     cursor: pointer;
 }
 
-.name-heading:hover {
+/*.name-heading:hover {
     background-color: #D42020;
     color: #fff;
     transition: 0.3s;
-}
+}*/
 
 .big-new-article_name {
     font-size: 32px;
@@ -1133,9 +1133,10 @@ input {
 }
 
 .small-hotspot_name {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.44;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .small-hotspot_date {
@@ -1316,7 +1317,7 @@ input {
     flex-wrap: wrap;
 }
 
-.company-logo img {
+.company-logo a img {
     width: 280px;
 }
 
@@ -1447,7 +1448,7 @@ input {
         height: auto;
     }
 
-    .company-logo img {
+    .company-logo a img {
         max-width: 100%;
         width: 25%;
     }
@@ -1691,7 +1692,7 @@ input {
         font-size: 14px;
     }
 
-    .company-logo img {
+    .company-logo a img {
         width: 33%;
     }
 
