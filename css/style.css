@@ -681,7 +681,6 @@ input {
     display: block;
     text-decoration: none;
     color: #000;
-
 }
 
 .more-news div a:hover {
@@ -1438,6 +1437,103 @@ input {
 /*-- END HOMEPAGE --*/
 
 
+/*-- RIGHT SIDE ARTICLE PREMIUM --*/
+
+.interview-block {
+    border: 1px solid #000;
+    display: block;
+}
+
+.interview-img {
+    position: relative;
+    font-size: 0;
+}
+
+.interview-img span {
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.interview-block:hover .interview-img span {
+    background: #D42020;
+    transition: 0.3s;
+}
+
+.interview-text {
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin: 10px;
+    line-height: 20px;
+}
+
+.oa-title {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.other-articles_block {
+    margin-top: 30px;
+}
+
+.other-articles {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.other-articles div {
+    border-bottom: 1px solid #EFEFEF;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.other-articles div:last-child {
+    border-bottom: none;
+}
+
+.other-articles_block:hover .oa-title {
+    background: #D42020;
+    transition: 0.3s;
+}
+
+.other-articles div a {
+    font-family: 'Cabrito-Bold', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.other-articles div a:hover {
+    text-decoration: underline;
+}
+
+.other-articles {
+    overflow: scroll;
+    height: 320px;
+}
+
+/*-- END RIGHT SIDE ARTICLE PREMIUM --*/
+
+
 
 @media screen and (max-width: 1170px) {
     .main-content, .header-content, .footer-content {
@@ -1543,6 +1639,20 @@ input {
     .technology-right, .webshop-container {
         margin-top: 30px;
     }
+
+
+    /*-- RIGHT SIDE ARTICLE PREMIUM --*/
+
+    .other-articles div a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .other-articles {
+        height: 272px;
+    }
+
+    /*-- END RIGHT SIDE ARTICLE PREMIUM --*/
     
 }
 
@@ -1645,6 +1755,19 @@ input {
     .company-section {
         display: none;
     }
+
+    /*-- RIGHT SIDE ARTICLE PREMIUM --*/
+
+    .other-articles div a, .interview-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .other-articles {
+        height: 100%;
+    }
+
+    /*-- END RIGHT SIDE ARTICLE PREMIUM --*/
 }
 
 @media screen and (max-width: 500px) {
