@@ -1457,7 +1457,7 @@ input {
     color: #fff;
     font-size: 18px;
     padding: 10px;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
     transition: 0.3s;
 }
@@ -1468,7 +1468,7 @@ input {
 }
 
 .interview-text {
-    font-size: 16px;
+    font-size: 15px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -1484,7 +1484,7 @@ input {
     color: #fff;
     font-size: 18px;
     padding: 10px;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
     transition: 0.3s;
 }
@@ -1504,10 +1504,6 @@ input {
     padding-top: 12px;
 }
 
-.other-articles div:last-child {
-    border-bottom: none;
-}
-
 .other-articles_block:hover .oa-title {
     background: #D42020;
     transition: 0.3s;
@@ -1515,7 +1511,7 @@ input {
 
 .other-articles div a {
     font-family: 'Cabrito-Bold', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 26px;
     display: block;
     text-decoration: none;
@@ -1526,9 +1522,8 @@ input {
     text-decoration: underline;
 }
 
-.other-articles {
-    overflow: scroll;
-    height: 320px;
+.other-articles div:last-child {
+    border-bottom: none;
 }
 
 /*-- END RIGHT SIDE ARTICLE PREMIUM --*/
@@ -1648,10 +1643,6 @@ input {
         line-height: 20px;
     }
 
-    .other-articles {
-        height: 272px;
-    }
-
     /*-- END RIGHT SIDE ARTICLE PREMIUM --*/
     
 }
@@ -1759,7 +1750,7 @@ input {
     /*-- RIGHT SIDE ARTICLE PREMIUM --*/
 
     .other-articles div a, .interview-text {
-        font-size: 18px;
+        font-size: 15px;
         line-height: 24px;
     }
 
