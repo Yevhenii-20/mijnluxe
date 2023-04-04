@@ -1526,6 +1526,25 @@ input {
     border-bottom: none;
 }
 
+.fancybox__footer {
+    display: none!important;
+}
+
+.flex-thumb a {
+    width: 24%;
+}
+
+.thumb, .gallery {
+    cursor: pointer;
+}
+
+.flex-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
 /*-- END RIGHT SIDE ARTICLE PREMIUM --*/
 
 
