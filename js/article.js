@@ -5,12 +5,12 @@ $( document ).ready(function() {
         e.preventDefault();
     });
 
-    $('.slider_ar_gallery').slick({
+    /*$('.slider_ar_gallery').slick({
         arrows: true,
         fade: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-    });
+    });*/
 
     Fancybox.bind('[data-fancybox="gallery"]', {});   
 });
