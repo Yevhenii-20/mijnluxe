@@ -1545,6 +1545,37 @@ input {
     padding-top: 5px;
 }
 
+.search-icon {
+    fill: #fff;
+    transition: 0.2s;
+    width: 28px;
+    height: 28px;
+}
+
+.flex-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-icon:hover {
+    fill: #C8C8C8;
+    transition: 0.2s;
+}
+
+.search-icon_block {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon_block span {
+    display: none;
+
+}
+
+
+
+
 /*-- END RIGHT SIDE ARTICLE PREMIUM --*/
 
 
@@ -1660,6 +1691,22 @@ input {
     .other-articles div a {
         font-size: 14px;
         line-height: 20px;
+    }
+
+    .flex-navigation {
+        flex-direction: column-reverse;
+    }
+
+    .search-icon_block span {
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        padding-left: 5px;
+        text-transform: uppercase;
+    }
+
+    .black-header .header-content {
+        padding-bottom: 10px;
     }
 
     /*-- END RIGHT SIDE ARTICLE PREMIUM --*/
