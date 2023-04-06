@@ -1694,19 +1694,24 @@ input {
     }
 
     .flex-navigation {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .search-icon_block span {
         display: block;
         color: #fff;
         font-size: 16px;
-        padding-left: 5px;
         text-transform: uppercase;
+        font-weight: 500;
+        padding-top: 15px;
+    }
+
+    .search-icon_block svg {
+        display: none;
     }
 
     .black-header .header-content {
-        padding-bottom: 10px;
+        padding-bottom: 15px;
     }
 
     /*-- END RIGHT SIDE ARTICLE PREMIUM --*/
